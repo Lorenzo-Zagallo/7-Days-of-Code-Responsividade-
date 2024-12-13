@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(media-queries.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --titulo: #464646;
+    --descricao: #A3A3A3;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 5em;
+    background: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* cabecalho */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    height: 8rem;
+    font-size: 16px;
+}
+
+.cabecalho img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.cabecalho-texto h1 {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--titulo);
+}
+
+.cabecalho-texto p {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--descricao);
+}
+
+
+/* corpo */
+
+.consulta_data {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--titulo);
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.consultas ul {
+    min-width: 330px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.consulta-item {
+    width: 350px;
+}
+
+/* consulta - parte de cima */
+
+.consulta_cartao {
+    font-size: 16px;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    background-color: #FFF;
+    border-radius: 8px;
+}
+
+.consulta_cartao-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.consulta_cartao-paciente {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.consulta_cartao-paciente div span {
+    margin-top: 0.5em;
+}
+
+.consulta-nome {
+    font-size: 0.9em;
+    font-weight: 700;
+    color: var(--titulo)
+}
+
+.consulta-tipo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--descricao);
+}
+
+.consulta-botao-chat {
+    border: none;
+    margin: 10px;
+}
+
+.consulta-linha {
+    margin-top: 25px;
+    margin-bottom: 5px;
+
+    border: none;
+    color: var(--titulo);
+}
+
+
+
+/* consulta - parte debaixo */
+
+.consulta_cartao-bottom {
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: var(--titulo);
+}
+
+.consulta_cartao-bottom p {
+    border-top: 1px solid #eee;
+    padding-top: 1em;
+    margin: 1em 0;
+}
+
+.consulta_cartao-bottom button {
+    border: none;
+    padding: 1em;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.consulta_btn {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-video {
+    width: 100%;
+    background-color: #FFB050;
+    color: #FFF;
+}
+
+.btn-audio {
+    width: 100%;
+    background-color: #ECECEC;
+    color: var(--titulo);
+}
+
+.btn-endereco {
+    width: 100%;
+    background-color: #4894FF;
+    color: #FFF;
+}
+
+
+
+/* barra inferior */
+
+
+
+.barra_inferior {
+    display: flex;
+    z-index: 3;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    border-radius: 1em 1em 0 0;
+    background-color: #FFF;
+    font-size: 16px;
+}
+
+.barra_inferior a {
+    text-decoration: none;
+}
+
+.barra_inferior-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+
+    font-size: 0.8em;
+    color: var(--titulo);
+    opacity: 60%;
+}
+
+.barra_inferior-item img {
+    width: 2em;
+    height: 2em;
+}
+
+.selected {
+    opacity: 100%;
+    color: #4894FF;
+}
+
+/* botao flutuante - cadastro */
+
+
+.botao_flutuante {
+    position: fixed;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: end;
+
+    right: 2%;
+    bottom: 10%;
+    z-index: 999;
+
+    text-align: end;
+}
+
+.botao_flutuante-cadastro, .botao_flutuante li button {
+    width: 50px;
+    height: 50px;
+    margin: 0.2em 0;
+
+    border-radius: 50%;
+    background: none;
+    border: none;
+    color: #FFF;
+    font-size: 2rem;
+    background-color: #4894FF;
+    box-shadow: 0 0 0.5em #4894FF;
+    z-index: 2;
+}
+
+.botao_flutuante li {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1em;
+}
+
+.botao_flutuante span {
+    padding: 0.5em;
+    font-size: 0.8em;
+    color: #000;
+    background-color: #FFF;
+    border-radius: 2em;
+    box-shadow: 0 0 1em 0em #000;
+}
+
+
+.botao_flutuante ul{
+    position: absolute;
+    opacity: 0;
+    margin-bottom: 80px;
+    margin-right: -10px;
+    padding-right: 10px;
+    z-index: 5;
+    /* opacity: 1; */
+    transition: all 0.3s 0s ease;
+
+    transform-origin: 85% bottom;
+    /* transform: scale(0); */
+}
+/*   
+.botao_flutuante-cadastro:focus + ul{
+    opacity: 1;
+    transform: scale(1);
+} */
+/* ESTÁ COMENTADO POIS ESTÁ IMPLEMENTADO EM JAVASCRIPT */
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form textarea {
+    resize: none;
+    height: 80px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}

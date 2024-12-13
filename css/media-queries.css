@@ -1,0 +1,155 @@
+/* extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .barra_inferior {
+        justify-content: space-between;
+    }
+
+    .formulario form {
+        display: none;
+    }
+}
+
+/* small devices (landscape phones, 576px and larger) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .consultas ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .consultas ul li {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .barra_inferior {
+        justify-content: space-between;
+    }
+
+    .formulario form {
+        display: none;
+    }
+
+}
+
+/* medium devices (tablets, 768px and larger) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .barra_inferior {
+        justify-content: space-between;
+    }
+
+}
+
+/* large devices (desktops, 992px and larger) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    main {
+        margin-left: 200px;
+    }
+
+    .barra_inferior {
+        display: flex;
+        justify-content: baseline;
+
+        flex-direction: column;
+        align-items: start;
+
+        top: 0;
+        left: auto;
+        right: auto;
+        bottom: auto;
+
+        position: fixed;
+        width: 200px;
+
+        border-radius: 0;
+    }
+
+    .barra_inferior a {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        font-size: 1em;
+    }
+    
+    .barra_inferior-item img {
+        width: 3em;
+        height: 3em;
+    }
+
+}
+
+/* extra large devices (large desktops, 1200px and larger) */
+@media (min-width: 1200px) {
+    main {
+        margin-left: 200px;
+    }
+
+    .barra_inferior {
+        display: flex;
+        justify-content: baseline;
+
+        flex-direction: column;
+        align-items: start;
+
+        top: 0;
+        left: auto;
+        right: auto;
+        bottom: auto;
+
+        position: fixed;
+        width: 200px;
+
+        border-radius: 0;
+    }
+
+    .barra_inferior a {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        
+        font-size: 1em;
+    }
+    
+    .barra_inferior-item img {
+        width: 3em;
+        height: 3em;
+    }
+
+}
+
+
+
+
+
+/* medium devices, large devices and extra large devices (768px and larger) */
+@media (min-width: 768px) {
+    .consulta-item {
+        width: 320px;
+    }
+    .consulta_btn {
+        width: 290px;
+    }
+
+    .consultas ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .consultas ul li {
+        display: flex;
+        flex-grow: 2;
+    }
+
+    .botao_flutuante li, .botao_flutuante span, .botao_flutuante-item {
+        display: none;
+    }
+
+
+    .formulario form {
+        display: block;
+    }
+
+}
