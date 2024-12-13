@@ -69,7 +69,7 @@ Aprendizados:
 
 ### 📣 Sobre o 7 Days of Code
 
-O **7 Days of Code** é uma iniciativa da Alura para incentivar o aprendizado e prática de habilidades de programação. Acesse [aqui](https://www.alura.com.br/challenges/7-days-of-code) para saber mais.
+O **7 Days of Code** é uma iniciativa da Alura para incentivar o aprendizado e prática de habilidades de programação. Acesse [aqui](https://7daysofcode.io/) para saber mais.
 
 ---
 
